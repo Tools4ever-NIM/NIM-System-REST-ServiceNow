@@ -1,0 +1,379 @@
+{
+    "schema": {
+        "crud_objects": {
+            "table_cmn_department": {
+                "operations": {
+                    "table_cmn_departmentList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/table/cmn_department"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        }
+                    }
+                },
+                "key": "sys_id",
+                "resources": {
+                    "parent": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_mod_count": "string*",
+                    "description": "string*",
+                    "head_count": "string*",
+                    "sys_updated_on": "string*",
+                    "sys_tags": "string*",
+                    "business_unit": "string*",
+                    "sys_id": "string*",
+                    "dept_head": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_updated_by": "string*",
+                    "cost_center": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_created_on": "string*",
+                    "name": "string*",
+                    "company": "string*",
+                    "id": "string*",
+                    "parent_hp1": "string*",
+                    "primary_contact": "string*",
+                    "sys_created_by": "string*"
+                }
+            },
+            "table_sys_group_has_role": {
+                "operations": {
+                    "table_sys_group_has_roleList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/table/sys_group_has_role"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        }
+                    }
+                },
+                "key": "sys_id",
+                "resources": {
+                    "sys_id": "string*",
+                    "role": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_updated_by": "string*",
+                    "sys_created_on": "string*",
+                    "sys_mod_count": "string*",
+                    "sys_updated_on": "string*",
+                    "sys_tags": "string*",
+                    "inherits": "string*",
+                    "granted_by": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_created_by": "string*",
+                    "group": {
+                        "link": "string*",
+                        "value": "string*"
+                    }
+                }
+            },
+            "table_sys_user": {
+                "operations": {
+                    "table_sys_userList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/table/sys_user"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        }
+                    }
+                },
+                "key": "sys_id",
+                "resources": {
+                    "calendar_integration": "string",
+                    "country": "string",
+                    "user_password": "string",
+                    "last_login_time": "string",
+                    "source": "string*",
+                    "sys_updated_on": "string*",
+                    "building": "string*",
+                    "web_service_access_only": "string*",
+                    "notification": "string*",
+                    "enable_multifactor_authn": "string*",
+                    "sys_updated_by": "string*",
+                    "sys_created_on": "string*",
+                    "sys_domain": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "state": "string",
+                    "fax": "string",
+                    "identity_type": "string*",
+                    "vip": "string*",
+                    "sys_created_by": "string*",
+                    "zip": "string",
+                    "home_phone": "string",
+                    "time_format": "string",
+                    "last_login": "string*",
+                    "default_perspective": "string*",
+                    "active": "string*",
+                    "sys_domain_path": "string*",
+                    "cost_center": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "phone": "string",
+                    "name": "string*",
+                    "employee_number": "string*",
+                    "password_needs_reset": "string*",
+                    "gender": "string",
+                    "city": "string",
+                    "failed_attempts": "string",
+                    "user_name": "string*",
+                    "roles": "string*",
+                    "manager_hp1": "string*",
+                    "title": "string*",
+                    "sys_class_name": "string*",
+                    "sys_id": "string*",
+                    "federated_id": "string*",
+                    "internal_integration_user": "string*",
+                    "ldap_server": "string",
+                    "mobile_phone": "string",
+                    "street": "string",
+                    "company": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "department": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "first_name": "string*",
+                    "email": "string*",
+                    "introduction": "string",
+                    "preferred_language": "string",
+                    "manager": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "locked_out": "string*",
+                    "sys_mod_count": "string",
+                    "last_name": "string*",
+                    "photo": "string",
+                    "avatar": "string",
+                    "middle_name": "string*",
+                    "sys_tags": "string",
+                    "time_zone": "string",
+                    "schedule": "string",
+                    "date_format": "string",
+                    "location": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    }
+                }
+            },
+            "table_sys_user_grmember": {
+                "operations": {
+                    "table_sys_user_grmemberList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/table/sys_user_grmember"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        }
+                    }
+                },
+                "key": "sys_id",
+                "resources": {
+                    "sys_id": "string*",
+                    "sys_updated_by": "string*",
+                    "sys_created_on": "string*",
+                    "sys_mod_count": "string*",
+                    "sys_updated_on": "string*",
+                    "sys_tags": "string*",
+                    "user": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_created_by": "string*",
+                    "group": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    }
+                }
+            },
+            "table_sys_user_group": {
+                "operations": {
+                    "table_sys_user_groupList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/table/sys_user_group"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        }
+                    }
+                },
+                "key": "sys_id",
+                "resources": {
+                    "parent": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "manager": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "roles": "string*",
+                    "sys_mod_count": "string*",
+                    "active": "string*",
+                    "description": "string*",
+                    "source": "string*",
+                    "sys_updated_on": "string*",
+                    "sys_tags": "string*",
+                    "type": "string*",
+                    "sys_id": "string*",
+                    "sys_updated_by": "string*",
+                    "cost_center": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "default_assignee": "string*",
+                    "sys_created_on": "string*",
+                    "name": "string*",
+                    "exclude_manager": "string*",
+                    "email": "string*",
+                    "include_members": "string*",
+                    "sys_created_by": "string*"
+                }
+            },
+            "table_sys_user_has_role": {
+                "operations": {
+                    "table_sys_user_has_roleList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/table/sys_user_has_role"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        }
+                    }
+                },
+                "key": "sys_id",
+                "resources": {
+                    "role": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_mod_count": "string*",
+                    "inh_map": "string*",
+                    "included_in_role": "string*",
+                    "included_in_role_instance": "string*",
+                    "sys_updated_on": "string*",
+                    "sys_tags": "string*",
+                    "inh_count": "string*",
+                    "granted_by": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_id": "string*",
+                    "sys_updated_by": "string*",
+                    "inherited": "string*",
+                    "sys_created_on": "string*",
+                    "state": "string*",
+                    "user": {
+                        "link": "_:string*",
+                        "value": "_:string*"
+                    },
+                    "sys_created_by": "string*"
+                }
+            }
+            
+        }
+    },
+    "rest": {
+        "config": {
+            "baseUrl": "https://{tenant_id}/api/now",
+            "get": {
+                "pagination": {
+                    "mode": "skip_take",
+                    "page_size": "{page_size}",
+                    "params": {
+                        "sysparm_limit": "{take_count}",
+                        "sysparm_offset": "{skip_count}"
+                    }
+                }
+            },
+            "authentication": "basic_auth",
+            "call_handling": "generic",
+            "test_connection": {
+                "url": "/table/sys_user"
+            },
+            "socket_timeout": 3600000,
+            "accept": "application/json",
+            "retry": [
+                {
+                    "type": "statusCode",
+                    "statusCode": 429,
+                    "retry": {
+                        "type": "simple",
+                        "maxCount": 12,
+                        "waitTime": 60
+                    }
+                },
+                {
+                    "type": "statusCode",
+                    "statusCode": 500,
+                    "retry": {
+                        "type": "simple",
+                        "maxCount": 12,
+                        "waitTime": 60
+                    }
+                },
+                {
+                    "type": "connectionError"
+                }
+            ]
+        }
+    },
+    "connection": {
+        "items": [
+            {
+                "name": "tenant_id",
+                "type": "textbox",
+                "label": "Tenent URL:",
+                "value": "<customerid>.service-now.com",
+                "required": true,
+                "order": 1
+            },
+            {
+                "name": "user_name",
+                "type": "textbox",
+                "label": "Username",
+                "required": true,
+                "order": 2
+            },
+            {
+                "name": "password",
+                "type": "textbox",
+                "label": "Password",
+                "required": true,
+                "password": true,
+                "order": 3
+            },
+            {
+                "name": "page_size",
+                "type": "textbox",
+                "label": "Page Size:",
+                "value": "50",
+                "required": true,
+                "order": 100
+            }
+        ]
+    }
+}
