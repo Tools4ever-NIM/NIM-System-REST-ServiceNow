@@ -90,6 +90,50 @@
                         "processing_options": {
                             "output_field": "result"
                         }
+                    },
+                    "table_sys_userCreate": {
+                        "method": "post",
+                        "semantics": "create",
+                        "call": {
+                            "path": "/table/sys_user"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        },
+                        "resource_allowance_default": "optional",
+                        "resource_prohibited": [
+                            "sys_id"
+                        ],
+                        "resource_mandatory": [
+                            "user_name",
+                            "first_name",
+                            "last_name"
+                        ]
+                    },
+                    "table_sys_userUpdate": {
+                        "method": "patch",
+                        "semantics": "update",
+                        "call": {
+                            "path": "/table/sys_user/{sys_id}"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        },
+                        "resource_allowance_default": "optional",
+                        "resource_mandatory": [
+                            "sys_id"
+                        ]
+                    },
+                    "table_sys_userDelete": {
+                        "method": "delete",
+                        "semantics": "delete",
+                        "call": {
+                            "path": "/table/sys_user/{sys_id}"
+                        },
+                        "resource_allowance_default": "prohibited",
+                        "resource_mandatory": [
+                            "sys_id"
+                        ]
                     }
                 },
                 "key": "sys_id",
@@ -186,6 +230,52 @@
                         "processing_options": {
                             "output_field": "result"
                         }
+                    },
+                    "table_sys_user_grmemberAdd": {
+                        "method": "post",
+                        "semantics": "create",
+                        "call": {
+                            "path": "/table/sys_user_grmember"
+                        },
+                        "body": {
+                            "_nim_merge_attributes_":false,
+                            "user": "{user_value}",
+                            "group": "{group_value}"
+                        }, 
+                        "processing_options": {
+                            "output_field": "result"
+                        },
+                        "resource_allowance_default": "prohibited",
+                        "resource_mandatory": [
+                            "user_value",
+                            "group_value"
+                        ]
+                    },
+                    "table_sys_user_grmemberRemove": {
+                        "method": "delete",
+                        "semantics": "delete",
+                        "call": {
+                            "path": "/table/sys_user_grmember/{sys_id}"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        },
+                        "resource_allowance_default": "prohibited",
+                        "resource_mandatory": [
+                            "sys_id"
+                        ]
+                    }
+                },
+                "groupmembership": {
+                    "add_operation": "table_sys_user_grmemberAdd",
+                    "remove_operation": "table_sys_user_grmemberRemove",
+                    "member_table": "table_sys_user",
+                    "group_table": "table_sys_user_group",
+                    "member_attributes": {
+                        "sys_id": "user_value"
+                    },
+                    "group_attributes": {
+                        "sys_id": "group_value"
                     }
                 },
                 "key": "sys_id",
@@ -217,6 +307,48 @@
                         "processing_options": {
                             "output_field": "result"
                         }
+                    },
+                    "table_sys_groupCreate": {
+                        "method": "post",
+                        "semantics": "create",
+                        "call": {
+                            "path": "/table/sys_user_group"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        },
+                        "resource_allowance_default": "optional",
+                        "resource_prohibited": [
+                            "sys_id"
+                        ],
+                        "resource_mandatory": [
+                            "name"
+                        ]
+                    },
+                    "table_sys_groupUpdate": {
+                        "method": "patch",
+                        "semantics": "update",
+                        "call": {
+                            "path": "/table/sys_user_group/{sys_id}"
+                        },
+                        "processing_options": {
+                            "output_field": "result"
+                        },
+                        "resource_allowance_default": "optional",
+                        "resource_mandatory": [
+                            "sys_id"
+                        ]
+                    },
+                    "table_sys_groupDelete": {
+                        "method": "delete",
+                        "semantics": "delete",
+                        "call": {
+                            "path": "/table/sys_user_group/{sys_id}"
+                        },
+                        "resource_allowance_default": "prohibited",
+                        "resource_mandatory": [
+                            "sys_id"
+                        ]
                     }
                 },
                 "key": "sys_id",
