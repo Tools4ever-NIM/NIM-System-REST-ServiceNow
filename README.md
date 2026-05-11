@@ -2,8 +2,6 @@
 
 <img src="https://github.com/user-attachments/assets/2851227a-a18e-4386-8d87-3237391085d8" width="256px" />
 
-**DEV** Holding for ticket# 30840
-
 ## Data Tables
 
 - table_cmn_department
@@ -18,6 +16,8 @@
 - table_sys_user (Create/Update/Delete)
 - table_sys_user_group (Create/Update/Delete)
 - table_sys_user_grmember (Add/Remove)
+
+**Role Model support not available yet.
 
 ## NIM Docs
 
