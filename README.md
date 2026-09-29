@@ -1,5 +1,7 @@
 # ServiceNow
 
+Read the [ServiceNow integration documentation](https://docs.nimsuite.com/en/integrations/servicenow) for connector details and related guides.
+
 <img src="https://github.com/user-attachments/assets/2851227a-a18e-4386-8d87-3237391085d8" width="256px" />
 
 ## Data Tables
